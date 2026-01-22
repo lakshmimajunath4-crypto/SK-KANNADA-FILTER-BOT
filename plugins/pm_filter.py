@@ -81,7 +81,7 @@ async def pm_search(client, message):
         await message.reply_text(
             "<b><i>ɪ ᴀᴍ ɴᴏᴛ ᴡᴏʀᴋɪɴɢ ʜᴇʀᴇ. ꜱᴇᴀʀᴄʜ ᴍᴏᴠɪᴇꜱ ɪɴ ᴏᴜʀ ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ.</i></b>",
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=MOVIE_GROUP_LINK)]]
+                [[InlineKeyboardButton("📝 ᴍᴏᴠɪᴇ ꜱᴇᴀʀᴄʜ ɢʀᴏᴜᴘ ", url=https://t.me/SB_KANNADA_MOVE_WORLD)]]
             ),
         )
 
@@ -108,7 +108,7 @@ async def group_search(client, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    "ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ 😉", url=MOVIE_GROUP_LINK
+                                    "ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ 😉", url=https://t.me/SB_KANNADA_MOVE_WORLD
                                 )
                             ]
                         ]
