@@ -1,15 +1,11 @@
-FROM python:3.10.8-slim-buster
+FROM python:3.10-slim-buster
 
-WORKDIR /Jisshu-filter-bot
-RUN chmod 777 /Jisshu-filter-bot
+RUN apt-get update && apt-get upgrade -y
+RUN apt-get install git python3-pip -y
 
-RUN apt update && apt install -y --no-install-recommends git \
-    && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY . /app
 
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip3 install -U -r requirements.txt
 
-COPY . .
-RUN chmod +x start.sh
-
-CMD ["bash", "start.sh"]
+CMD ["python3", "main.py"]
